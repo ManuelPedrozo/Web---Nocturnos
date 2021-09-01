@@ -1,0 +1,190 @@
+body {
+
+  font-family: 'Literata',serif;
+  background-image: url(Images/Maqueta.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*EFECTOS LETRAS============*/
+
+
+/* FIN EFECTOS LETRAS=========*/
+
+.explicacion {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.explicacion.row {
+  grid-row: 1;
+}
+
+.explicacion h1{
+  /*font-size: 6em;*/
+  font-size: calc(48px + (96 - 48) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.explicacion h5{
+  font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 600;
+  line-height: 2em;
+
+}
+.flecha{
+  margin-top: 20px;
+
+}
+
+section.filtro{
+  margin-top: 450px;
+  margin-bottom: 450px;
+}
+.filtros h2{
+  font-size: 3em;
+}
+.lista_epocas a h3{
+  transition: 1s;
+}
+.lista_epocas a h3:hover{
+  font-size: 2em;
+}
+
+.lista_autores a h3{
+  transition: 0.5s;
+}
+.lista_autores a h3:hover{
+  font-size: 2em;
+}
+
+.poema_autor {
+  text-decoration: inherit;
+}
+.categoria_elemento{
+  text-decoration: inherit;
+}
+.autor_epoca{
+  display:none;
+  text-decoration: inherit;
+}
+.lista_autores{
+  margin-bottom: 50px;
+}
+
+.lista_poemas{
+  display: ;
+  margin:auto;
+}
+.lista_poemas a h4{
+  transition: 2s;
+}
+.lista_poemas a h4:hover{
+  font-size: 2em;
+}
+.lista_poemas p{
+  font-style: italic;
+}
+
+.poema_autor{
+  display:none;
+  margin: auto;
+}
+
+
+section.todoslospoemas{
+  margin-top: 100px;
+
+}
+
+/*ELEMENTOS ACTIVOS============*/
+
+
+.ct_item-active {
+  text-decoration: line-through;
+}
+.ct_autor-active{
+  text-decoration:line-through;
+}
+.ct_poema-active{
+  text-decoration:line-through;
+}
+
+/*CSS POEMAS===============*/
+
+.poema{
+  display: none;
+
+}
+.poema h1{
+  font-size: 2em;
+}
+.poema h2{
+  font-size: 2em
+}
+.epigrafe{
+  margin-left: 15em;
+  font-style: italic;
+}
+
+.logo_n {
+  height: auto;
+  width: auto;
+  max-height: 100px;
+  max-width: 100px;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right:auto;
+  transition: all 0.3s ease;
+
+}
+.logo_n:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+footer{
+  max-height: 600px;
+  /*height: 400px;*/
+  background-color: #313131;
+  margin-top: 100px;
+
+}
+footer p{
+  font-size: calc(10px + (18 - 10) * ((100vw - 300px) / (1600 - 300)));
+  color:white;
+  margin-top: 50px;
+}
+footer p a{
+  color:white;
+}
+footer .logos img{
+  /*max-height: 125px;*/
+  /*max-width: 125px;*/
+  vertical-align:middle;
+  margin: 25px 0px 0px 0px;
+}
+.flechita{
+    /*transform: translate-y(15px);*/
+    animation: mover 6s ease-in-out infinite;
+}
+
+.caer{
+  animation: caer 3s ease-in
+}
+@keyframes caer {
+  0% {}
+
+}
+
+@keyframes mover {
+  /*0% { transform: scaleY(0.8); }
+  50% { transform: (50px);}
+  100% { transform: scaleY(0.8); }*/
+  0% {opacity: 0;}
+  1% {transform: scaleY(.9); }
+  48% {transform: (50px);}
+  50% {transform: scaleY(1);}
+  51% {opacity: 100;}
+  99% {transform: scaleY(.9); }
+  100% {opacity: 0;}
+}
